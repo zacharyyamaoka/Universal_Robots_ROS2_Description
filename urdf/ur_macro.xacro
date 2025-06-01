@@ -428,5 +428,14 @@
       <child link="${tf_prefix}tool0"/>
     </joint>
 
+    <!-- https://github.com/ros-industrial/universal_robot/pull/506/files -->
+    <!-- Link from original ur_kinematics, see notes in the ur_ros1 package-->
+    <link name="${tf_prefix}ee_link"/>
+    <joint name="${tf_prefix}ee_fixed_joint" type="fixed">
+      <parent link="${tf_prefix}wrist_3_link" />
+      <child link="${tf_prefix}ee_link" />
+      <origin xyz="0 0 0" rpy="0.0 ${-pi/2.0} ${pi/2.0}" />
+    </joint>
+
   </xacro:macro>
 </robot>
