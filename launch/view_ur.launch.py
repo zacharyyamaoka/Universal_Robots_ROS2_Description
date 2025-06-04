@@ -35,7 +35,7 @@ from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 from launch_ros.parameter_descriptions import ParameterValue
 
-
+# ros2 launch ur_description view_ur.launch.py ur_type:=ur5e
 def generate_launch_description():
     declared_arguments = []
     # UR specific arguments
