@@ -55,8 +55,6 @@
   <xacro:macro name="ur_robot" params="
     name
     tf_prefix
-    parent
-    *origin
     joint_limits_parameters_file
     kinematics_parameters_file
     physical_parameters_file
@@ -77,13 +75,14 @@
 
     <!-- links -  main serial chain -->
 
-    <!-- base_link serves as the root of the robot's kinematic tree. It follows REP-103
+    <!-- base_link_ur serves as the root of the robot's kinematic tree. It follows REP-103
         conventions (i.e., X+ forward, Y+ left, Z+ up).
         Since some kinematic solvers forbid having inertia values attached to a root link, we've
         added the base_link_inertia link that carries the visual, collision and inertia
         information.
     -->
-    <link name="${tf_prefix}base_link"/>
+    <!-- Rename base_link to base_link_ur so you can add another base_link_ur outside... -->
+    <link name="${tf_prefix}base_link_ur"/>
     <link name="${tf_prefix}base_link_inertia">
       <xacro:get_visual_params name="base" type="mesh_offset"/>
       <visual>
@@ -292,20 +291,20 @@
       </inertial>
     </link>
 
-    <!-- base_joint fixes base_link to the environment -->
-    <joint name="${tf_prefix}base_joint" type="fixed">
+    <!-- base_joint fixes base_link_ur to the environment -->
+    <!-- <joint name="${tf_prefix}base_joint" type="fixed">
       <xacro:insert_block name="origin" />
       <parent link="${parent}" />
-      <child link="${tf_prefix}base_link" />
-    </joint>
+      <child link="${tf_prefix}base_link_ur" />
+    </joint> -->
 
     <!-- joints - main serial chain -->
-    <joint name="${tf_prefix}base_link-base_link_inertia" type="fixed">
-      <parent link="${tf_prefix}base_link" />
+    <joint name="${tf_prefix}base_link_ur-base_link_inertia" type="fixed">
+      <parent link="${tf_prefix}base_link_ur" />
       <child link="${tf_prefix}base_link_inertia" />
-      <!-- 'base_link' is REP-103 aligned (so X+ forward), while the internal
+      <!-- 'base_link_ur' is REP-103 aligned (so X+ forward), while the internal
            frames of the robot/controller have X+ pointing backwards.
-           Use the joint between 'base_link' and 'base_link_inertia' (a dummy
+           Use the joint between 'base_link_ur' and 'base_link_inertia' (a dummy
            link/frame) to introduce the necessary rotation over Z (of pi rad).
       -->
       <origin xyz="0 0 0" rpy="0 0 ${pi}" />
@@ -320,7 +319,8 @@
       <xacro:if value="${safety_limits}">
          <safety_controller soft_lower_limit="${shoulder_pan_lower_limit + safety_pos_margin}" soft_upper_limit="${shoulder_pan_upper_limit - safety_pos_margin}" k_position="${safety_k_position}" k_velocity="0.0"/>
       </xacro:if>
-      <dynamics damping="0.2" friction="0.5"/>
+      <!-- Increase friction in lower joints, they seem to be osscilating alot in sim, and we know friction increases with load -->
+      <dynamics damping="0.05" friction="0.3"/> 
     </joint>
     <joint name="${tf_prefix}shoulder_lift_joint" type="revolute">
       <parent link="${tf_prefix}shoulder_link" />
@@ -332,7 +332,7 @@
       <xacro:if value="${safety_limits}">
          <safety_controller soft_lower_limit="${shoulder_lift_lower_limit + safety_pos_margin}" soft_upper_limit="${shoulder_lift_upper_limit - safety_pos_margin}" k_position="${safety_k_position}" k_velocity="0.0"/>
       </xacro:if>
-      <dynamics damping="0.2" friction="0.5"/>
+      <dynamics damping="0.05" friction="0.3"/>
     </joint>
     <joint name="${tf_prefix}elbow_joint" type="revolute">
       <parent link="${tf_prefix}upper_arm_link" />
@@ -344,7 +344,7 @@
       <xacro:if value="${safety_limits}">
          <safety_controller soft_lower_limit="${elbow_joint_lower_limit + safety_pos_margin}" soft_upper_limit="${elbow_joint_upper_limit - safety_pos_margin}" k_position="${safety_k_position}" k_velocity="0.0"/>
       </xacro:if>
-      <dynamics damping="0.2" friction="0.5"/>
+      <dynamics damping="0.05" friction="0.1"/>
     </joint>
     <joint name="${tf_prefix}wrist_1_joint" type="revolute">
       <parent link="${tf_prefix}forearm_link" />
@@ -356,7 +356,7 @@
       <xacro:if value="${safety_limits}">
          <safety_controller soft_lower_limit="${wrist_1_lower_limit + safety_pos_margin}" soft_upper_limit="${wrist_1_upper_limit - safety_pos_margin}" k_position="${safety_k_position}" k_velocity="0.0"/>
       </xacro:if>
-      <dynamics damping="0.2" friction="0.5"/>
+      <dynamics damping="0.05" friction="0.1"/>
     </joint>
     <joint name="${tf_prefix}wrist_2_joint" type="revolute">
       <parent link="${tf_prefix}wrist_1_link" />
@@ -368,7 +368,7 @@
       <xacro:if value="${safety_limits}">
          <safety_controller soft_lower_limit="${wrist_2_lower_limit + safety_pos_margin}" soft_upper_limit="${wrist_2_upper_limit - safety_pos_margin}" k_position="${safety_k_position}" k_velocity="0.0"/>
       </xacro:if>
-      <dynamics damping="0.2" friction="0.5"/>
+      <dynamics damping="0.05" friction="0.1"/>
     </joint>
     <joint name="${tf_prefix}wrist_3_joint" type="${wrist_3_joint_type}">
       <parent link="${tf_prefix}wrist_2_link" />
@@ -388,7 +388,7 @@
           <safety_controller k_position="${safety_k_position}" k_velocity="0.0"/>
         </xacro:if>
       </xacro:unless>
-      <dynamics damping="0.2" friction="0.5"/>
+      <dynamics damping="0.05" friction="0.1"/>
     </joint>
 
     <link name="${tf_prefix}ft_frame"/>
@@ -398,16 +398,16 @@
       <origin xyz="0 0 0" rpy="${pi} 0 0"/>
     </joint>
 
-    <!-- ROS-Industrial 'base' frame - base_link to UR 'Base' Coordinates transform -->
+    <!-- ROS-Industrial 'base' frame - base_link_ur to UR 'Base' Coordinates transform -->
     <link name="${tf_prefix}base"/>
-    <joint name="${tf_prefix}base_link-base_fixed_joint" type="fixed">
-      <!-- Note the rotation over Z of pi radians - as base_link is REP-103
+    <joint name="${tf_prefix}base_link_ur-base_fixed_joint" type="fixed">
+      <!-- Note the rotation over Z of pi radians - as base_link_ur is REP-103
            aligned (i.e., has X+ forward, Y+ left and Z+ up), this is needed
            to correctly align 'base' with the 'Base' coordinate system of
            the UR controller.
       -->
       <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
-      <parent link="${tf_prefix}base_link"/>
+      <parent link="${tf_prefix}base_link_ur"/>
       <child link="${tf_prefix}base"/>
     </joint>
 
@@ -437,5 +437,56 @@
       <origin xyz="0 0 0" rpy="0.0 ${-pi/2.0} ${pi/2.0}" />
     </joint>
 
+    <!-- For testing IK offset converions, helpful to have a offset tcp link -->
+    <link name="${tf_prefix}tcp_world_test" />
+    <joint name="${tf_prefix}tool0_to_tcp_world_test" type="fixed">
+      <parent link="${tf_prefix}tool0" />
+      <child link="${tf_prefix}tcp_world_test" />
+      <!-- Go forward a bit along z and flip around -->
+      <origin xyz="0 0 0.1" rpy="${pi} 0 0" />
+    </joint>
+
   </xacro:macro>
+
+
+  <xacro:macro name="make_arm" params="config_file">
+
+    <xacro:property name="cfg" value="${xacro.load_yaml(config_file)}"/>
+
+
+    <xacro:arg name="name" default="ur"/>
+    <xacro:arg name="ur_type" default="${cfg['urdf']['xacro_args']['ur_type']}"/>
+
+    <!-- parameters -->
+    <!-- <xacro:arg name="tf_prefix" default="${cfg['urdf']['xacro_args']['tf_prefix']}" /> -->
+    <xacro:arg name="tf_prefix" default="''" />
+    <xacro:arg name="joint_limit_params" default="$(find ur_description)/config/$(arg ur_type)/joint_limits.yaml"/>
+    <xacro:arg name="kinematics_params" default="$(find ur_description)/config/$(arg ur_type)/default_kinematics.yaml"/>
+    <xacro:arg name="physical_params" default="$(find ur_description)/config/$(arg ur_type)/physical_parameters.yaml"/>
+    <xacro:arg name="visual_params" default="$(find ur_description)/config/$(arg ur_type)/visual_parameters.yaml"/>
+    <xacro:arg name="transmission_hw_interface" default=""/>
+    <xacro:arg name="safety_limits" default="false"/>
+    <xacro:arg name="safety_pos_margin" default="0.15"/>
+    <xacro:arg name="safety_k_position" default="20"/>
+
+    <!--When using gazebo simulations absolute paths are necessary.-->
+    <xacro:arg name="force_abs_paths" default="false" />
+
+
+    <xacro:ur_robot
+      name="$(arg name)"
+      tf_prefix="$(arg tf_prefix)"
+      joint_limits_parameters_file="$(arg joint_limit_params)"
+      kinematics_parameters_file="$(arg kinematics_params)"
+      physical_parameters_file="$(arg physical_params)"
+      visual_parameters_file="$(arg visual_params)"
+      safety_limits="$(arg safety_limits)"
+      safety_pos_margin="$(arg safety_pos_margin)"
+      safety_k_position="$(arg safety_k_position)"
+      force_abs_paths="$(arg force_abs_paths)"
+      />
+
+  </xacro:macro>
+  
+ 
 </robot>
