@@ -2,12 +2,18 @@ REGISTRY: {}
 _file_name: ''
 _file_name_stamped: ''
 _metadata:
-    created_at: 06_33pm_29_oct_2025
+    created_at: 01_53pm_03_nov_2025
     created_by: Zach Yamaoka
     version: '1.0'
 _save_dir: ''
+args: {}
 base_link: base_link
-base_mount: base_link
+base_mount: base_link_ur
+base_rpy: 0 0 0
+base_xyz: 0 0 0
+config_dir: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/config
+config_file_name: ur_skuur5e_v0.0.0_config
+config_file_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/config/ur_skuur5e_v0.0.0_config.yaml
 dh:
     a2: '-0.425'
     a3: '-0.3922'
@@ -15,14 +21,8 @@ dh:
     d4: '0.1333'
     d5: '0.0997'
     d6: '0.0996'
-five_bar:
-    L_c1: '0.0'
-    L_c2: '0.0'
-    L_elbow: '0.0'
-    L_l1: '0.0'
-    L_l2: '0.0'
-    L_shoulder: '0.0'
-    theta_elbow_offset: '0.0'
+hand_mount: tool0
+ik_base_link: base_link_ur
 ik_sol_preference:
 -   Elbow: Up
     Shoulder: Left
@@ -31,11 +31,12 @@ ik_sol_preference:
     Shoulder: Left
     Wrist: Up
 ik_tip: tool0
+ik_tip_flip: tool0_flip
 info:
+    calib_hash: ''
     config_key: ''
     name: ur
-    prefix: ''
-    sku: UR5e
+    sku: ur5e
     type: ur
     uuid: 00000000-0000-0000-0000-000000000000
     version: 0.0.0
@@ -44,6 +45,7 @@ joints:
     hardstop_position: '0.0'
     home_position: '0.0'
     initial_position: '0.0'
+    is_fixed: 'false'
     limits:
         has_acceleration_limits: 'true'
         has_effort_limits: 'false'
@@ -62,15 +64,21 @@ joints:
         min_velocity: '-10.0'
     lock: 'false'
     lock_position: '0.0'
+    mimic: 'false'
     name: shoulder_pan_joint
-    passive: 'false'
     physics:
         damping: '0.0'
         friction: '0.0'
+    transform:
+        child_frame_id: ''
+        frame_id: ''
+        rpy: 0.0 -0.0 0.0
+        xyz: 0.0 0.0 0.0
 -   can_id: '0'
     hardstop_position: '0.0'
     home_position: '0.0'
     initial_position: '-1.5707'
+    is_fixed: 'false'
     limits:
         has_acceleration_limits: 'true'
         has_effort_limits: 'false'
@@ -89,15 +97,21 @@ joints:
         min_velocity: '-10.0'
     lock: 'false'
     lock_position: '0.0'
+    mimic: 'false'
     name: shoulder_lift_joint
-    passive: 'false'
     physics:
         damping: '0.0'
         friction: '0.0'
+    transform:
+        child_frame_id: ''
+        frame_id: ''
+        rpy: 0.0 -0.0 0.0
+        xyz: 0.0 0.0 0.0
 -   can_id: '0'
     hardstop_position: '0.0'
     home_position: '0.0'
     initial_position: '0.0'
+    is_fixed: 'false'
     limits:
         has_acceleration_limits: 'true'
         has_effort_limits: 'false'
@@ -116,15 +130,21 @@ joints:
         min_velocity: '-10.0'
     lock: 'false'
     lock_position: '0.0'
+    mimic: 'false'
     name: elbow_joint
-    passive: 'false'
     physics:
         damping: '0.0'
         friction: '0.0'
+    transform:
+        child_frame_id: ''
+        frame_id: ''
+        rpy: 0.0 -0.0 0.0
+        xyz: 0.0 0.0 0.0
 -   can_id: '0'
     hardstop_position: '0.0'
     home_position: '0.0'
     initial_position: '0.0'
+    is_fixed: 'false'
     limits:
         has_acceleration_limits: 'true'
         has_effort_limits: 'false'
@@ -143,15 +163,21 @@ joints:
         min_velocity: '-10.0'
     lock: 'false'
     lock_position: '0.0'
+    mimic: 'false'
     name: wrist_1_joint
-    passive: 'false'
     physics:
         damping: '0.0'
         friction: '0.0'
+    transform:
+        child_frame_id: ''
+        frame_id: ''
+        rpy: 0.0 -0.0 0.0
+        xyz: 0.0 0.0 0.0
 -   can_id: '0'
     hardstop_position: '0.0'
     home_position: '0.0'
     initial_position: '0.0'
+    is_fixed: 'false'
     limits:
         has_acceleration_limits: 'true'
         has_effort_limits: 'false'
@@ -170,15 +196,21 @@ joints:
         min_velocity: '-10.0'
     lock: 'false'
     lock_position: '0.0'
+    mimic: 'false'
     name: wrist_2_joint
-    passive: 'false'
     physics:
         damping: '0.0'
         friction: '0.0'
+    transform:
+        child_frame_id: ''
+        frame_id: ''
+        rpy: 0.0 -0.0 0.0
+        xyz: 0.0 0.0 0.0
 -   can_id: '0'
     hardstop_position: '0.0'
     home_position: '0.0'
     initial_position: '0.0'
+    is_fixed: 'false'
     limits:
         has_acceleration_limits: 'true'
         has_effort_limits: 'false'
@@ -197,47 +229,37 @@ joints:
         min_velocity: '-10.0'
     lock: 'false'
     lock_position: '0.0'
+    mimic: 'false'
     name: wrist_3_joint
-    passive: 'false'
     physics:
         damping: '0.0'
         friction: '0.0'
-links: []
-move_group_arm: ur_manipulator
-move_group_gripper: gripper
+    transform:
+        child_frame_id: ''
+        frame_id: ''
+        rpy: 0.0 -0.0 0.0
+        xyz: 0.0 0.0 0.0
+links: {}
+lock_joints: 'false'
+name: ur
 named_positions:
     ready: 1.4 -1.62 1.54 -1.2 -1.6 -0.11
     up: 0 -1.5707 0 -1.5707 0 0
+plugin: none
 points_of_interest: []
+prefix: ''
 reach_map_path: /home/bam/bam_ws/src/bam_core/traj_gen/bam_reach/maps/ur/ur5e/ur5e_table_0.8x1.5x0.8_0.30_180x45x360_09_aug_2025.pkl
+reflect: '1'
+root_link: world
 srdf:
-    macro_name: ''
     macro_path: ''
     path: ''
-    xacro_args:
-        base_rpy: 0 0 0
-        base_xyz: 0 0 0
-        name: ur5e
-        plugin: none
-        reflect: '1'
-        world_rpy: 0 0 0
-        world_xyz: 0 0 0
     xacro_path: /home/bam/public_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/srdf/ur.srdf.xacro
 trajectory_topic: scaled_joint_trajectory_controller/follow_joint_trajectory
 urdf:
-    macro_name: ''
-    macro_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/urdf/ur_macro.xacro
+    macro_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/ur_macro.xacro
     mesh_package_name: /home/bam/public_ws/install/ur_description/share
     path: ''
-    xacro_args:
-        base_rpy: 0 0 0
-        base_xyz: 0 0 0
-        name: ur5e
-        plugin: none
-        reflect: '1'
-        ur_type: ur5e
-        world_rpy: 0 0 0
-        world_xyz: 0 0 0
-    xacro_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/ur.urdf.xacro
-world_link: world
-yaml_file_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/config/ur_skuUR5e_v0.0.0_config.yaml
+    xacro_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/ur_config.urdf.xacro
+world_rpy: 0 0 0
+world_xyz: 0 0 0

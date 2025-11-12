@@ -101,9 +101,9 @@
           <xacro:get_mesh name="base" type="collision"/>
         </geometry>
       </collision>
-      <xacro:cylinder_inertial radius="${base_inertia_radius}" length="${base_inertia_length}" mass="${base_mass}">
+      <xacro:cylinder_inertial_ur radius="${base_inertia_radius}" length="${base_inertia_length}" mass="${base_mass}">
         <origin xyz="0 0 0" rpy="0 0 0" />
-      </xacro:cylinder_inertial>
+      </xacro:cylinder_inertial_ur>
     </link>
     <link name="${tf_prefix}shoulder_link">
       <xacro:get_visual_params name="shoulder" type="mesh_offset"/>
@@ -391,6 +391,7 @@
       <dynamics damping="0.05" friction="0.1"/>
     </joint>
 
+      <!-- The FT Frame has the same pose as tool0_flip, but we add tool0_flip because its more verbose -->
     <link name="${tf_prefix}ft_frame"/>
     <joint name="${tf_prefix}wrist_3_link-ft_frame" type="fixed">
       <parent link="${tf_prefix}wrist_3_link"/>
@@ -446,20 +447,27 @@
       <origin xyz="0 0 0.1" rpy="${pi} 0 0" />
     </joint>
 
+      <link name="${tf_prefix}tool0_flip"/>
+      <joint name="${tf_prefix}tool0-tool0flip" type="fixed">
+        <origin xyz="0 0 0" rpy="${pi} 0 0"/>
+        <parent link="${tf_prefix}tool0"/>
+        <child link="${tf_prefix}tool0_flip"/>
+      </joint>
+
   </xacro:macro>
 
 
-  <xacro:macro name="make_arm" params="config_file">
+  <xacro:macro name="make_arm" params="config_file_path">
 
-    <xacro:property name="cfg" value="${xacro.load_yaml(config_file)}"/>
+    <xacro:property name="cfg" value="${xacro.load_yaml(config_file_path)}"/>
 
 
     <xacro:arg name="name" default="ur"/>
-    <xacro:arg name="ur_type" default="${cfg['urdf']['xacro_args']['ur_type']}"/>
+    <xacro:arg name="ur_type" default="${cfg['info']['sku']}"/>
 
     <!-- parameters -->
     <!-- <xacro:arg name="tf_prefix" default="${cfg['urdf']['xacro_args']['tf_prefix']}" /> -->
-    <xacro:arg name="tf_prefix" default="''" />
+    <xacro:arg name="tf_prefix" default="${cfg['prefix']}" />
     <xacro:arg name="joint_limit_params" default="$(find ur_description)/config/$(arg ur_type)/joint_limits.yaml"/>
     <xacro:arg name="kinematics_params" default="$(find ur_description)/config/$(arg ur_type)/default_kinematics.yaml"/>
     <xacro:arg name="physical_params" default="$(find ur_description)/config/$(arg ur_type)/physical_parameters.yaml"/>

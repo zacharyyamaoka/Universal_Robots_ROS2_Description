@@ -11,7 +11,7 @@
     Author: Ludovic Delval
     Contributor: Felix Messmer
   -->
-  <xacro:macro name="cylinder_inertial" params="radius length mass *origin">
+  <xacro:macro name="cylinder_inertial_ur" params="radius length mass *origin">
     <inertial>
       <mass value="${mass}" />
       <xacro:insert_block name="origin" />
