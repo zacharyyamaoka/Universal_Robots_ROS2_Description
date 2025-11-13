@@ -7,7 +7,7 @@ base_rpy: 0 0 0.7853981633974483
 base_xyz: 0.1 0.2 0
 config_dir: /home/bam/bam_ws/src/ur_description/urdf/config
 config_file_name: right_ur_ur5e_v0.0.0
-config_file_path: /home/bam/bam_ws/src/ur_description/urdf/config/right_ur_ur5e_v0.0.0.yaml
+config_file: /home/bam/bam_ws/src/ur_description/urdf/config/right_ur_ur5e_v0.0.0.yaml
 dh:
     a2: '-0.425'
     a3: '-0.3922'

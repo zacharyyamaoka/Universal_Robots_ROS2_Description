@@ -5,14 +5,14 @@
 
    <xacro:include filename="$(arg ur_description)/urdf/ur_macro.xacro"/>
 
-   <xacro:arg name="config_file_path" default="$(arg ur_description)/urdf/config/ex_make_arm.yaml"/>
-   <xacro:property name="config_file_path" value="$(arg config_file_path)"/>
-   <xacro:property name="cfg" value="${xacro.load_yaml(config_file_path)}"/>
+   <xacro:arg name="config_file" default="$(arg ur_description)/urdf/config/ex_make_arm.yaml"/>
+   <xacro:property name="config_file" value="$(arg config_file)"/>
+   <xacro:property name="cfg" value="${xacro.load_yaml(config_file)}"/>
 
    <link name="world"/>
 
    <joint name="world_to_base" type="fixed">
-       <origin xyz="${cfg['world_xyz']}" rpy="${cfg['world_rpy']}"/>
+       <origin xyz="${cfg['args']['world_xyz']}" rpy="${cfg['args']['world_rpy']}"/>
        <parent link="world"/>
        <child link="base_link"/>
    </joint>
@@ -20,11 +20,11 @@
   <link name="base_link"/>
 
    <joint name="base_link_joint" type="fixed">
-       <origin xyz="${cfg['base_xyz']}" rpy="${cfg['base_rpy']}"/>
+       <origin xyz="${cfg['args']['base_xyz']}" rpy="${cfg['args']['base_rpy']}"/>
        <parent link="base_link"/>
-       <child link="${cfg['prefix']}base_link_ur"/>
+       <child link="${cfg['info']['prefix']}base_link_ur"/>
    </joint>
     
-   <xacro:make_arm config_file_path="${config_file_path}"/>
+   <xacro:make_arm config_file="${config_file}"/>
 
 </robot>

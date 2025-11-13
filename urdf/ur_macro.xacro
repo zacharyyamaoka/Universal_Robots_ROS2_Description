@@ -458,9 +458,9 @@
   </xacro:macro>
 
 
-  <xacro:macro name="make_arm" params="config_file_path">
+  <xacro:macro name="make_arm" params="config_file">
 
-    <xacro:property name="cfg" value="${xacro.load_yaml(config_file_path)}"/>
+    <xacro:property name="cfg" value="${xacro.load_yaml(config_file)}"/>
 
 
     <xacro:arg name="name" default="ur"/>
@@ -468,7 +468,7 @@
 
     <!-- parameters -->
     <!-- <xacro:arg name="tf_prefix" default="${cfg['urdf']['xacro_args']['tf_prefix']}" /> -->
-    <xacro:arg name="tf_prefix" default="${cfg['prefix']}" />
+    <xacro:arg name="tf_prefix" default="${cfg['info']['prefix']}" />
     <xacro:arg name="joint_limit_params" default="$(arg ur_description)/config/$(arg ur_type)/joint_limits.yaml"/>
     <xacro:arg name="kinematics_params" default="$(arg ur_description)/config/$(arg ur_type)/default_kinematics.yaml"/>
     <xacro:arg name="physical_params" default="$(arg ur_description)/config/$(arg ur_type)/physical_parameters.yaml"/>

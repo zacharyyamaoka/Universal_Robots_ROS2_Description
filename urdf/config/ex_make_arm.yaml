@@ -13,7 +13,7 @@ base_rpy: 0 0 0
 base_xyz: 0 0 0
 config_dir: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/config
 config_file_name: ur_skuur5e_v0.0.0_config
-config_file_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/config/ur_skuur5e_v0.0.0_config.yaml
+config_file: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/config/ur_skuur5e_v0.0.0_config.yaml
 dh:
     a2: '-0.425'
     a3: '-0.3922'
