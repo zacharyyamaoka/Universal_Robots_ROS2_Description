@@ -2,12 +2,12 @@ REGISTRY: {}
 args: {}
 bam_descriptions: /home/bam/bam_ws/src/bam_machine/bam/descriptions
 base_link: base_link
-base_mount: back_right_base_link_ur
+base_mount: front_left_base_link_ur
 base_rpy: 0 0 0
 base_xyz: 0 0 0
 config_dir: /home/bam/bam_ws/src/ur_description/urdf/config
-config_file_name: ur_ur5e_v0.0.0
-config_file_path: /home/bam/bam_ws/src/ur_description/urdf/config/ur_ur5e_v0.0.0.yaml
+config_file_name: front_left_ur_ur5e_v0.0.0
+config_file_path: /home/bam/bam_ws/src/ur_description/urdf/config/front_left_ur_ur5e_v0.0.0.yaml
 dh:
     a2: '-0.425'
     a3: '-0.3922'
@@ -16,9 +16,9 @@ dh:
     d5: '0.0997'
     d6: '0.0996'
 force_srdf_gen: 'false'
-hand_mount: back_right_tool0
+hand_mount: front_left_tool0
 hash_config_file: 'false'
-ik_base_link: back_right_base_link_ur
+ik_base_link: front_left_base_link_ur
 ik_sol_preference:
 -   Elbow: Up
     Shoulder: Left
@@ -26,7 +26,7 @@ ik_sol_preference:
 -   Elbow: Up
     Shoulder: Left
     Wrist: Up
-ik_tip: back_right_tool0
+ik_tip: front_left_tool0
 ik_tip_flip: tool0_flip
 info:
     config_key: ''
@@ -61,7 +61,7 @@ joints:
         lock: 'false'
         lock_position: '0.0'
         mimic: 'false'
-        name: back_right_elbow_joint
+        name: front_left_elbow_joint
         physics:
             damping: '0.0'
             friction: '0.0'
@@ -71,7 +71,7 @@ joints:
         type: revolute
         unprefixed_name: elbow_joint
     entities:
-        back_right_back_right_elbow_joint:
+        front_left_front_left_elbow_joint:
             can_id: '0'
             hardstop_position: '0.0'
             home_position: '0.0'
@@ -95,7 +95,7 @@ joints:
             lock: 'false'
             lock_position: '0.0'
             mimic: 'false'
-            name: back_right_elbow_joint
+            name: front_left_elbow_joint
             physics:
                 damping: '0.0'
                 friction: '0.0'
@@ -104,7 +104,7 @@ joints:
                 xyz: 0.0 0.0 0.0
             type: revolute
             unprefixed_name: elbow_joint
-        back_right_back_right_shoulder_lift_joint:
+        front_left_front_left_shoulder_lift_joint:
             can_id: '0'
             hardstop_position: '0.0'
             home_position: '0.0'
@@ -128,7 +128,7 @@ joints:
             lock: 'false'
             lock_position: '0.0'
             mimic: 'false'
-            name: back_right_shoulder_lift_joint
+            name: front_left_shoulder_lift_joint
             physics:
                 damping: '0.0'
                 friction: '0.0'
@@ -137,7 +137,7 @@ joints:
                 xyz: 0.0 0.0 0.0
             type: revolute
             unprefixed_name: shoulder_lift_joint
-        back_right_back_right_shoulder_pan_joint:
+        front_left_front_left_shoulder_pan_joint:
             can_id: '0'
             hardstop_position: '0.0'
             home_position: '0.0'
@@ -161,7 +161,7 @@ joints:
             lock: 'false'
             lock_position: '0.0'
             mimic: 'false'
-            name: back_right_shoulder_pan_joint
+            name: front_left_shoulder_pan_joint
             physics:
                 damping: '0.0'
                 friction: '0.0'
@@ -170,7 +170,7 @@ joints:
                 xyz: 0.0 0.0 0.0
             type: revolute
             unprefixed_name: shoulder_pan_joint
-        back_right_back_right_wrist_1_joint:
+        front_left_front_left_wrist_1_joint:
             can_id: '0'
             hardstop_position: '0.0'
             home_position: '0.0'
@@ -194,7 +194,7 @@ joints:
             lock: 'false'
             lock_position: '0.0'
             mimic: 'false'
-            name: back_right_wrist_1_joint
+            name: front_left_wrist_1_joint
             physics:
                 damping: '0.0'
                 friction: '0.0'
@@ -203,7 +203,7 @@ joints:
                 xyz: 0.0 0.0 0.0
             type: revolute
             unprefixed_name: wrist_1_joint
-        back_right_back_right_wrist_2_joint:
+        front_left_front_left_wrist_2_joint:
             can_id: '0'
             hardstop_position: '0.0'
             home_position: '0.0'
@@ -227,7 +227,7 @@ joints:
             lock: 'false'
             lock_position: '0.0'
             mimic: 'false'
-            name: back_right_wrist_2_joint
+            name: front_left_wrist_2_joint
             physics:
                 damping: '0.0'
                 friction: '0.0'
@@ -236,7 +236,7 @@ joints:
                 xyz: 0.0 0.0 0.0
             type: revolute
             unprefixed_name: wrist_2_joint
-        back_right_back_right_wrist_3_joint:
+        front_left_front_left_wrist_3_joint:
             can_id: '0'
             hardstop_position: '0.0'
             home_position: '0.0'
@@ -260,7 +260,7 @@ joints:
             lock: 'false'
             lock_position: '0.0'
             mimic: 'false'
-            name: back_right_wrist_3_joint
+            name: front_left_wrist_3_joint
             physics:
                 damping: '0.0'
                 friction: '0.0'
@@ -293,7 +293,7 @@ joints:
         lock: 'false'
         lock_position: '0.0'
         mimic: 'false'
-        name: back_right_shoulder_lift_joint
+        name: front_left_shoulder_lift_joint
         physics:
             damping: '0.0'
             friction: '0.0'
@@ -326,7 +326,7 @@ joints:
         lock: 'false'
         lock_position: '0.0'
         mimic: 'false'
-        name: back_right_shoulder_pan_joint
+        name: front_left_shoulder_pan_joint
         physics:
             damping: '0.0'
             friction: '0.0'
@@ -359,7 +359,7 @@ joints:
         lock: 'false'
         lock_position: '0.0'
         mimic: 'false'
-        name: back_right_wrist_1_joint
+        name: front_left_wrist_1_joint
         physics:
             damping: '0.0'
             friction: '0.0'
@@ -392,7 +392,7 @@ joints:
         lock: 'false'
         lock_position: '0.0'
         mimic: 'false'
-        name: back_right_wrist_2_joint
+        name: front_left_wrist_2_joint
         physics:
             damping: '0.0'
             friction: '0.0'
@@ -425,7 +425,7 @@ joints:
         lock: 'false'
         lock_position: '0.0'
         mimic: 'false'
-        name: back_right_wrist_3_joint
+        name: front_left_wrist_3_joint
         physics:
             damping: '0.0'
             friction: '0.0'
@@ -458,7 +458,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'false'
-        name: back_right_base_link
+        name: front_left_base_link
         scene_obj_collision: 'false'
         unprefixed_name: base_link
         visual_mesh_path: ''
@@ -488,7 +488,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'true'
-        name: back_right_base_link_ur
+        name: front_left_base_link_ur
         scene_obj_collision: 'false'
         unprefixed_name: base_link_ur
         visual_mesh_path: ''
@@ -518,7 +518,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'true'
-        name: back_right_ee_link
+        name: front_left_ee_link
         scene_obj_collision: 'false'
         unprefixed_name: ee_link
         visual_mesh_path: ''
@@ -526,7 +526,7 @@ links:
             rpy: 0.0 -0.0 0.0
             xyz: 0.0 0.0 0.0
     entities:
-        back_right_back_right_base_link:
+        front_left_front_left_base_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -549,14 +549,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'false'
-            name: back_right_base_link
+            name: front_left_base_link
             scene_obj_collision: 'false'
             unprefixed_name: base_link
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_base_link_ur:
+        front_left_front_left_base_link_ur:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -579,14 +579,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'true'
-            name: back_right_base_link_ur
+            name: front_left_base_link_ur
             scene_obj_collision: 'false'
             unprefixed_name: base_link_ur
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_ee_link:
+        front_left_front_left_ee_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -609,14 +609,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'true'
-            name: back_right_ee_link
+            name: front_left_ee_link
             scene_obj_collision: 'false'
             unprefixed_name: ee_link
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_forearm_link:
+        front_left_front_left_forearm_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -639,14 +639,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'false'
-            name: back_right_forearm_link
+            name: front_left_forearm_link
             scene_obj_collision: 'true'
             unprefixed_name: forearm_link
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_shoulder_link:
+        front_left_front_left_shoulder_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -669,14 +669,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'false'
-            name: back_right_shoulder_link
+            name: front_left_shoulder_link
             scene_obj_collision: 'false'
             unprefixed_name: shoulder_link
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_tool0:
+        front_left_front_left_tool0:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -699,14 +699,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'true'
-            name: back_right_tool0
+            name: front_left_tool0
             scene_obj_collision: 'false'
             unprefixed_name: tool0
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_upper_arm_link:
+        front_left_front_left_upper_arm_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -729,14 +729,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'false'
-            name: back_right_upper_arm_link
+            name: front_left_upper_arm_link
             scene_obj_collision: 'false'
             unprefixed_name: upper_arm_link
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_wrist_1_link:
+        front_left_front_left_wrist_1_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -759,14 +759,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'false'
-            name: back_right_wrist_1_link
+            name: front_left_wrist_1_link
             scene_obj_collision: 'true'
             unprefixed_name: wrist_1_link
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_wrist_2_link:
+        front_left_front_left_wrist_2_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -789,14 +789,14 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'false'
-            name: back_right_wrist_2_link
+            name: front_left_wrist_2_link
             scene_obj_collision: 'true'
             unprefixed_name: wrist_2_link
             visual_mesh_path: ''
             visual_origin:
                 rpy: 0.0 -0.0 0.0
                 xyz: 0.0 0.0 0.0
-        back_right_back_right_wrist_3_link:
+        front_left_front_left_wrist_3_link:
             collision_geometry_size: 0.0 0.0 0.0
             collision_geometry_type: box
             collision_mesh_path: ''
@@ -819,7 +819,7 @@ links:
                     y: '0.0'
                     z: '0.0'
             is_frame: 'false'
-            name: back_right_wrist_3_link
+            name: front_left_wrist_3_link
             scene_obj_collision: 'true'
             unprefixed_name: wrist_3_link
             visual_mesh_path: ''
@@ -849,7 +849,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'false'
-        name: back_right_forearm_link
+        name: front_left_forearm_link
         scene_obj_collision: 'true'
         unprefixed_name: forearm_link
         visual_mesh_path: ''
@@ -879,7 +879,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'false'
-        name: back_right_shoulder_link
+        name: front_left_shoulder_link
         scene_obj_collision: 'false'
         unprefixed_name: shoulder_link
         visual_mesh_path: ''
@@ -909,7 +909,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'true'
-        name: back_right_tool0
+        name: front_left_tool0
         scene_obj_collision: 'false'
         unprefixed_name: tool0
         visual_mesh_path: ''
@@ -939,7 +939,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'false'
-        name: back_right_upper_arm_link
+        name: front_left_upper_arm_link
         scene_obj_collision: 'false'
         unprefixed_name: upper_arm_link
         visual_mesh_path: ''
@@ -969,7 +969,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'false'
-        name: back_right_wrist_1_link
+        name: front_left_wrist_1_link
         scene_obj_collision: 'true'
         unprefixed_name: wrist_1_link
         visual_mesh_path: ''
@@ -999,7 +999,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'false'
-        name: back_right_wrist_2_link
+        name: front_left_wrist_2_link
         scene_obj_collision: 'true'
         unprefixed_name: wrist_2_link
         visual_mesh_path: ''
@@ -1029,7 +1029,7 @@ links:
                 y: '0.0'
                 z: '0.0'
         is_frame: 'false'
-        name: back_right_wrist_3_link
+        name: front_left_wrist_3_link
         scene_obj_collision: 'true'
         unprefixed_name: wrist_3_link
         visual_mesh_path: ''
@@ -1048,7 +1048,7 @@ positions:
         initial: 0.0 -1.5707 0.0 0.0 0.0 0.0
         ready: 1.4 -1.62 1.54 -1.2 -1.6 -0.11
         up: 0 -1.5707 0 -1.5707 0 0
-prefix: back_right_
+prefix: front_left_
 reach_map_path: /maps/ur/ur5e/ur5e_table_0.8x1.5x0.8_0.30_180x45x360_09_aug_2025.pkl
 reflect: '1'
 root_link: world

@@ -6,8 +6,8 @@ base_mount: back_right_base_link_ur
 base_rpy: 0 0 0
 base_xyz: 0 0 0
 config_dir: /home/bam/bam_ws/src/ur_description/urdf/config
-config_file_name: ur_ur5e_v0.0.0
-config_file_path: /home/bam/bam_ws/src/ur_description/urdf/config/ur_ur5e_v0.0.0.yaml
+config_file_name: back_right_ur_ur5e_v0.0.0
+config_file_path: /home/bam/bam_ws/src/ur_description/urdf/config/back_right_ur_ur5e_v0.0.0.yaml
 dh:
     a2: '-0.425'
     a3: '-0.3922'

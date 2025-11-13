@@ -13,50 +13,50 @@ upstream changes some pipelines might turn red temporarily which can be expected
   </tr>
   <tr>
     <th>Branch</th>
-    <td><a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/humble">humble</a></td>
-    <td><a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/jazzy">jazzy</a></td>
-    <td><a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/rolling">rolling</a></td>
-    <td><a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/rolling">rolling</a></td>
+    <td><a href="https://github.com/UniversalRobots/ur_description/tree/humble">humble</a></td>
+    <td><a href="https://github.com/UniversalRobots/ur_description/tree/jazzy">jazzy</a></td>
+    <td><a href="https://github.com/UniversalRobots/ur_description/tree/rolling">rolling</a></td>
+    <td><a href="https://github.com/UniversalRobots/ur_description/tree/rolling">rolling</a></td>
   </tr>
   <tr>
     <th>Repo builds</th>
     <td>
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/humble-binary-main.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/humble-binary-main.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/humble-binary-main.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/humble-binary-main.yml/badge.svg?event=schedule"
               alt="Humble Binary Main"/>
       </a> <br />
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/humble-binary-testing.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/humble-binary-testing.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/humble-binary-testing.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/humble-binary-testing.yml/badge.svg?event=schedule"
               alt="Humble Binary Testing"/>
       </a> <br />
     </td>
     <td>
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/jazzy-binary-main.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/jazzy-binary-main.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/jazzy-binary-main.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/jazzy-binary-main.yml/badge.svg?event=schedule"
               alt="Jazzy Binary Main"/>
       </a> <br />
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/jazzy-binary-testing.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/jazzy-binary-testing.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/jazzy-binary-testing.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/jazzy-binary-testing.yml/badge.svg?event=schedule"
               alt="Jazzy Binary Testing"/>
       </a> <br />
     </td>
     <td> <!-- Kilted -->
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/kilted-binary-main.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/kilted-binary-main.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/kilted-binary-main.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/kilted-binary-main.yml/badge.svg?event=schedule"
               alt="Kilted Binary Main"/>
       </a> <br />
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/kilted-binary-testing.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/kilted-binary-testing.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/kilted-binary-testing.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/kilted-binary-testing.yml/badge.svg?event=schedule"
               alt="Kilted Binary Testing"/>
       </a> <br />
     </td>
     <td>
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/rolling-binary-main.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/rolling-binary-main.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/rolling-binary-main.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/rolling-binary-main.yml/badge.svg?event=schedule"
               alt="Rolling Binary Main"/>
       </a> <br />
-      <a href="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/rolling-binary-testing.yml?query=event%3Aschedule++">
-         <img src="https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/actions/workflows/rolling-binary-testing.yml/badge.svg?event=schedule"
+      <a href="https://github.com/UniversalRobots/ur_description/actions/workflows/rolling-binary-testing.yml?query=event%3Aschedule++">
+         <img src="https://github.com/UniversalRobots/ur_description/actions/workflows/rolling-binary-testing.yml/badge.svg?event=schedule"
               alt="Rolling Binary Testing"/>
       </a> <br />
     </td>

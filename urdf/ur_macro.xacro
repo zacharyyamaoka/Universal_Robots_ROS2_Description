@@ -49,8 +49,9 @@
      - Ajit Krisshna N L
      - Muhammad Asif Rana
   -->
+  <xacro:arg name="ur_description" default="$(env UR_DESCRIPTION_PATH)"/>
 
-  <xacro:include filename="$(find ur_description)/urdf/inc/ur_common.xacro" />
+  <xacro:include filename="$(arg ur_description)/urdf/inc/ur_common.xacro" />
 
   <xacro:macro name="ur_robot" params="
     name
@@ -468,10 +469,10 @@
     <!-- parameters -->
     <!-- <xacro:arg name="tf_prefix" default="${cfg['urdf']['xacro_args']['tf_prefix']}" /> -->
     <xacro:arg name="tf_prefix" default="${cfg['prefix']}" />
-    <xacro:arg name="joint_limit_params" default="$(find ur_description)/config/$(arg ur_type)/joint_limits.yaml"/>
-    <xacro:arg name="kinematics_params" default="$(find ur_description)/config/$(arg ur_type)/default_kinematics.yaml"/>
-    <xacro:arg name="physical_params" default="$(find ur_description)/config/$(arg ur_type)/physical_parameters.yaml"/>
-    <xacro:arg name="visual_params" default="$(find ur_description)/config/$(arg ur_type)/visual_parameters.yaml"/>
+    <xacro:arg name="joint_limit_params" default="$(arg ur_description)/config/$(arg ur_type)/joint_limits.yaml"/>
+    <xacro:arg name="kinematics_params" default="$(arg ur_description)/config/$(arg ur_type)/default_kinematics.yaml"/>
+    <xacro:arg name="physical_params" default="$(arg ur_description)/config/$(arg ur_type)/physical_parameters.yaml"/>
+    <xacro:arg name="visual_params" default="$(arg ur_description)/config/$(arg ur_type)/visual_parameters.yaml"/>
     <xacro:arg name="transmission_hw_interface" default=""/>
     <xacro:arg name="safety_limits" default="false"/>
     <xacro:arg name="safety_pos_margin" default="0.15"/>

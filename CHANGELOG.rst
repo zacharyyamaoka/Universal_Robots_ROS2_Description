@@ -4,124 +4,124 @@ Changelog for package ur_description
 
 4.0.0 (2025-05-14)
 ------------------
-* Add support for UR15 (`#290 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/290>`_)
-* Add documentation about the different base and base_link frames (`#286 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/286>`_)
-* [BREAKING] changes for Kilted (`#280 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/280>`_)
-* Branch jazzy (`#284 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/284>`_)
+* Add support for UR15 (`#290 <https://github.com/UniversalRobots/ur_description/issues/290>`_)
+* Add documentation about the different base and base_link frames (`#286 <https://github.com/UniversalRobots/ur_description/issues/286>`_)
+* [BREAKING] changes for Kilted (`#280 <https://github.com/UniversalRobots/ur_description/issues/280>`_)
+* Branch jazzy (`#284 <https://github.com/UniversalRobots/ur_description/issues/284>`_)
 * Contributors: Felix Exner
 
 3.1.1 (2025-05-05)
 ------------------
-* Add kilted (`#279 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/279>`_)
-* Update ur3e's inertia values (`#276 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/276>`_)
-* Update documentation (`#277 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/277>`_)
+* Add kilted (`#279 <https://github.com/UniversalRobots/ur_description/issues/279>`_)
+* Update ur3e's inertia values (`#276 <https://github.com/UniversalRobots/ur_description/issues/276>`_)
+* Update documentation (`#277 <https://github.com/UniversalRobots/ur_description/issues/277>`_)
 * Contributors: Felix Exner
 
 3.1.0 (2025-04-02)
 ------------------
-* Update inertia matrix for UR3e and UR5e from measurements (`#256 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/256>`_)
-* Auto-update pre-commit hooks (`#268 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/268>`_)
-* Add support for UR7e and UR12e (`#266 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/266>`_)
-* Update README.md (`#264 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/264>`_)
+* Update inertia matrix for UR3e and UR5e from measurements (`#256 <https://github.com/UniversalRobots/ur_description/issues/256>`_)
+* Auto-update pre-commit hooks (`#268 <https://github.com/UniversalRobots/ur_description/issues/268>`_)
+* Add support for UR7e and UR12e (`#266 <https://github.com/UniversalRobots/ur_description/issues/266>`_)
+* Update README.md (`#264 <https://github.com/UniversalRobots/ur_description/issues/264>`_)
 * Contributors: Chalongrath Pholsiri, Felix Exner, Michael Behrens, github-actions[bot]
 
 3.0.2 (2025-03-17)
 ------------------
-* Fix UR3 mesh positioning (`#258 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/258>`_)
-* Auto-update pre-commit hooks (`#254 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/254>`_)
-* Auto-update pre-commit hooks (`#252 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/252>`_)
-* Auto-update pre-commit hooks (`#249 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/249>`_)
+* Fix UR3 mesh positioning (`#258 <https://github.com/UniversalRobots/ur_description/issues/258>`_)
+* Auto-update pre-commit hooks (`#254 <https://github.com/UniversalRobots/ur_description/issues/254>`_)
+* Auto-update pre-commit hooks (`#252 <https://github.com/UniversalRobots/ur_description/issues/252>`_)
+* Auto-update pre-commit hooks (`#249 <https://github.com/UniversalRobots/ur_description/issues/249>`_)
 * Contributors: Felix Exner, github-actions[bot]
 
 3.0.1 (2025-01-23)
 ------------------
-* Fix ur20 upperarm texture (`#244 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/244>`_)
-* Removing Blender Lighting and Camera information from visual DAE files (`#243 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/243>`_)
-* Auto-update pre-commit hooks (`#241 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/241>`_)
-* Update package maintainers (`#238 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/238>`_)
+* Fix ur20 upperarm texture (`#244 <https://github.com/UniversalRobots/ur_description/issues/244>`_)
+* Removing Blender Lighting and Camera information from visual DAE files (`#243 <https://github.com/UniversalRobots/ur_description/issues/243>`_)
+* Auto-update pre-commit hooks (`#241 <https://github.com/UniversalRobots/ur_description/issues/241>`_)
+* Update package maintainers (`#238 <https://github.com/UniversalRobots/ur_description/issues/238>`_)
 * Contributors: Felix Exner, Shaurya Kumar
 
 3.0.0 (2024-12-11)
 ------------------
-* Remove Iron workflows and from README (`#230 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/230>`_)
-* Assure the description is loaded as string (`#229 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/229>`_)
+* Remove Iron workflows and from README (`#230 <https://github.com/UniversalRobots/ur_description/issues/230>`_)
+* Assure the description is loaded as string (`#229 <https://github.com/UniversalRobots/ur_description/issues/229>`_)
 * Contributors: Felix Exner
 
 2.4.5 (2024-10-14)
 ------------------
-* Revert "Add passthrough command interfaces for joints (`#204 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/204>`_)" (`#214 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/214>`_)
-* Auto-update pre-commit hooks (`#211 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/211>`_)
+* Revert "Add passthrough command interfaces for joints (`#204 <https://github.com/UniversalRobots/ur_description/issues/204>`_)" (`#214 <https://github.com/UniversalRobots/ur_description/issues/214>`_)
+* Auto-update pre-commit hooks (`#211 <https://github.com/UniversalRobots/ur_description/issues/211>`_)
 * Contributors: Felix Exner (fexner), github-actions[bot]
 
 2.4.4 (2024-10-10)
 ------------------
-* Add a sensor for the TCP pose (`#197 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/197>`_)
-* Add passthrough command interfaces for joints (`#204 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/204>`_)
-* Ur3 infinite wrist (`#196 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/196>`_)
-* Update dynamic properties (`#195 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/195>`_)
+* Add a sensor for the TCP pose (`#197 <https://github.com/UniversalRobots/ur_description/issues/197>`_)
+* Add passthrough command interfaces for joints (`#204 <https://github.com/UniversalRobots/ur_description/issues/204>`_)
+* Ur3 infinite wrist (`#196 <https://github.com/UniversalRobots/ur_description/issues/196>`_)
+* Update dynamic properties (`#195 <https://github.com/UniversalRobots/ur_description/issues/195>`_)
   Co-authored-by: Rune Søe-Knudsen <41109954+urrsk@users.noreply.github.com>
 * Contributors: Chalongrath Pholsiri, Felix Exner (fexner), URJala, Rune Søe-Knudsen
 
 2.4.3 (2024-09-10)
 ------------------
-* Fix masses of robot links (`#187 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/187>`_)
+* Fix masses of robot links (`#187 <https://github.com/UniversalRobots/ur_description/issues/187>`_)
 * Contributors: Felix Exner (fexner)
 
 2.4.2 (2024-08-09)
 ------------------
-* Added dynamics tag when using mock_components/GenericSystem (`#181 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/181>`_)
+* Added dynamics tag when using mock_components/GenericSystem (`#181 <https://github.com/UniversalRobots/ur_description/issues/181>`_)
 * Contributors: Felix Exner (fexner)
 
 2.4.1 (2024-06-19)
 ------------------
-* Add migration notes for jazzy (`#169 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/pull/169>`_)
-* Remove limits definitions from ros2_control command interfaces (`#166 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/pull/166>`_)
-* Sphinx doc (`#161 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/161>`_)
-* Use absolute paths for configurable files (`#160 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/160>`_)
-* [CI] Fix ref for scheduled jazzy testing binary build (`#162 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/pull/162>`_)
-* Add Jazzy to the README (`#158 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/pull/158>`_)
+* Add migration notes for jazzy (`#169 <https://github.com/UniversalRobots/ur_description/pull/169>`_)
+* Remove limits definitions from ros2_control command interfaces (`#166 <https://github.com/UniversalRobots/ur_description/pull/166>`_)
+* Sphinx doc (`#161 <https://github.com/UniversalRobots/ur_description/issues/161>`_)
+* Use absolute paths for configurable files (`#160 <https://github.com/UniversalRobots/ur_description/issues/160>`_)
+* [CI] Fix ref for scheduled jazzy testing binary build (`#162 <https://github.com/UniversalRobots/ur_description/pull/162>`_)
+* Add Jazzy to the README (`#158 <https://github.com/UniversalRobots/ur_description/pull/158>`_)
 * Contributors: Felix Exner, Vincenzo Di Pentima
 
 2.4.0 (2024-04-25)
 ------------------
-* Fix multi-line strings in DeclareLaunchArgument (`#140 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/140>`_)
-* Add mergify rule for iron branch (`#120 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/120>`_)
+* Fix multi-line strings in DeclareLaunchArgument (`#140 <https://github.com/UniversalRobots/ur_description/issues/140>`_)
+* Add mergify rule for iron branch (`#120 <https://github.com/UniversalRobots/ur_description/issues/120>`_)
 * Fix default calibration file for UR30
 * Contributors: Felix Exner, Matthijs van der Burgh, RobertWilbrandt
 
 2.2.5 (2024-04-04)
 ------------------
-* Auto-update pre-commit hooks (`#130 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/130>`_)
-* Bump pre-commit/action from 3.0.0 to 3.0.1 (`#134 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/134>`_)
-* Bump peter-evans/create-pull-request from 5 to 6 (`#133 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/133>`_)
+* Auto-update pre-commit hooks (`#130 <https://github.com/UniversalRobots/ur_description/issues/130>`_)
+* Bump pre-commit/action from 3.0.0 to 3.0.1 (`#134 <https://github.com/UniversalRobots/ur_description/issues/134>`_)
+* Bump peter-evans/create-pull-request from 5 to 6 (`#133 <https://github.com/UniversalRobots/ur_description/issues/133>`_)
 * Update Graphical Documentation license to version 1.01
 * Make sure the UR5 models are actually standing on the ground
 * Contributors: Felix Exner, dependabot[bot], github-actions[bot]
 
 2.2.4 (2023-12-22)
 ------------------
-* Add UR30 model (`#126 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/126>`_)
+* Add UR30 model (`#126 <https://github.com/UniversalRobots/ur_description/issues/126>`_)
 * Contributors: Felix Exner (fexner)
 
 2.2.3 (2023-12-18)
 ------------------
-* Auto-update pre-commit hooks (`#123 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/123>`_)
-* Bump actions/setup-python from 4 to 5 (`#122 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/122>`_)
-* Remove ros2_control tag from package (`#114 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/114>`_)
+* Auto-update pre-commit hooks (`#123 <https://github.com/UniversalRobots/ur_description/issues/123>`_)
+* Bump actions/setup-python from 4 to 5 (`#122 <https://github.com/UniversalRobots/ur_description/issues/122>`_)
+* Remove ros2_control tag from package (`#114 <https://github.com/UniversalRobots/ur_description/issues/114>`_)
 * Contributors: Felix Exner
 
 2.2.2 (2023-11-15)
 ------------------
-* Default to non_blocking_read=true (`#111 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/pull/111>`_)
-* Add license comment to package.xml (`#107 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/107>`_)
-* License update for README (`#108 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/108>`_)
-* added possibility to change reverse_port, script_sender_port and trajectory_port (`#105 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/105>`_)
+* Default to non_blocking_read=true (`#111 <https://github.com/UniversalRobots/ur_description/pull/111>`_)
+* Add license comment to package.xml (`#107 <https://github.com/UniversalRobots/ur_description/issues/107>`_)
+* License update for README (`#108 <https://github.com/UniversalRobots/ur_description/issues/108>`_)
+* added possibility to change reverse_port, script_sender_port and trajectory_port (`#105 <https://github.com/UniversalRobots/ur_description/issues/105>`_)
 * Contributors: Felix Durchdewald, Felix Exner, Rune Søe-Knudsen, dependabot[bot], github-actions[bot]
 
 2.2.1 (2023-09-08)
 ------------------
-* Update the joint limits for UR20 (`#98 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/98>`_)
-* UR20 description and meshes (`#94 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/94>`_)
+* Update the joint limits for UR20 (`#98 <https://github.com/UniversalRobots/ur_description/issues/98>`_)
+* UR20 description and meshes (`#94 <https://github.com/UniversalRobots/ur_description/issues/94>`_)
   The UR20 meshes are added under Universal Robots A/S’
   Terms and Conditions for Use of Graphical Documentation
 * Contributors: Rune Søe-Knudsen, Felix Exner
@@ -130,48 +130,48 @@ Changelog for package ur_description
 ------------------
 * Auto-update pre-commit hooks
 * Do not require upstream ws in ici
-* Auto-update pre-commit hooks (`#88 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/88>`_)
-* Bump ros-tooling/setup-ros from 0.2 to 0.7 (`#83 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/83>`_)
-* Bump pat-s/always-upload-cache from 2.1.5 to 3.0.11 (`#84 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/84>`_)
-* Bump actions/checkout from 1 to 3 (`#85 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/85>`_)
-* Update README regarding distribution branches (`#80 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/80>`_)
+* Auto-update pre-commit hooks (`#88 <https://github.com/UniversalRobots/ur_description/issues/88>`_)
+* Bump ros-tooling/setup-ros from 0.2 to 0.7 (`#83 <https://github.com/UniversalRobots/ur_description/issues/83>`_)
+* Bump pat-s/always-upload-cache from 2.1.5 to 3.0.11 (`#84 <https://github.com/UniversalRobots/ur_description/issues/84>`_)
+* Bump actions/checkout from 1 to 3 (`#85 <https://github.com/UniversalRobots/ur_description/issues/85>`_)
+* Update README regarding distribution branches (`#80 <https://github.com/UniversalRobots/ur_description/issues/80>`_)
 * Add mergify, dependabot and pre-commit update
-* Switch fake to mock for ros2_control updates (`#77 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/77>`_)
-* Add iron workflow (`#64 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/64>`_)
+* Switch fake to mock for ros2_control updates (`#77 <https://github.com/UniversalRobots/ur_description/issues/77>`_)
+* Add iron workflow (`#64 <https://github.com/UniversalRobots/ur_description/issues/64>`_)
 * Contributors: Felix Exner, Sebastian Castro, dependabot[bot], github-actions[bot]
 
 2.1.0 (2023-06-01)
 ------------------
-* added missing handback interface - ros2control mock interface won't work otherwise (`#68 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/68>`_)
+* added missing handback interface - ros2control mock interface won't work otherwise (`#68 <https://github.com/UniversalRobots/ur_description/issues/68>`_)
   Co-authored-by: Lennart Nachtigall <lennart.nachtigall@sci-mo.de>
-* remove ticks from tf_prefix (`#60 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/60>`_)
+* remove ticks from tf_prefix (`#60 <https://github.com/UniversalRobots/ur_description/issues/60>`_)
   Co-authored-by: Lennart Nachtigall <lennart.nachtigall@sci-mo.de>
 * Replace duplicated ``prefix`` parameter with ``tf_prefix``
 * Whitespace fixes
 * Update pre-commit workflows to current versions
-* This commits adds additional configuration fields which are needed for multiarm support: (`#47 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/47>`_)
+* This commits adds additional configuration fields which are needed for multiarm support: (`#47 <https://github.com/UniversalRobots/ur_description/issues/47>`_)
   - Added trajectory_port        - Port needed for the trajectory sending interface
   - Added non_blocking_read      - Takes control of the update rate from ur interface by immediately returning from the read method
   - Added keep_alive_count field - Configures the amount of allowed reading timeouts on the robot side
   Additionally it adds the ${prefix} argument for the gpios and the force torque sensor in the ur.ros2_control.xacro file
   Co-authored-by: Lennart Nachtigall <firesurfer@firesurfer.de>
-* Set the default tool voltage in the description to 0 (`#41 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/41>`_)
+* Set the default tool voltage in the description to 0 (`#41 <https://github.com/UniversalRobots/ur_description/issues/41>`_)
   I am not sure whether this will actually affect something, as I don't think
   we actually set the value initially, but it still makes sense to keep the
   default tool voltage at 0 to emphasize that by default, this will not be
   set higher.
-* Run prerelease tests on current distros (`#44 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/44>`_)
+* Run prerelease tests on current distros (`#44 <https://github.com/UniversalRobots/ur_description/issues/44>`_)
 * Contributors: Felix Exner, Felix Exner (fexner), Lennart Nachtigall
 
 2.0.1 (2022-11-08)
 ------------------
-* Add tool voltage and zero ft sensor to command interface (`#38 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/38>`_)
+* Add tool voltage and zero ft sensor to command interface (`#38 <https://github.com/UniversalRobots/ur_description/issues/38>`_)
   Added reverse ip and script command interface port as parameters
-* use xacro.load_yaml in favor of deprecated version (`#43 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/43>`_)
+* use xacro.load_yaml in favor of deprecated version (`#43 <https://github.com/UniversalRobots/ur_description/issues/43>`_)
   Co-authored-by: aditya <aditya@nimble.ai>
-* Use mock_components instead of fake_components (`#37 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/37>`_)
+* Use mock_components instead of fake_components (`#37 <https://github.com/UniversalRobots/ur_description/issues/37>`_)
   This has been renamed in ros2_control hardware_interface.
-* Prepare for branching out galactic (`#39 <https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/issues/39>`_)
+* Prepare for branching out galactic (`#39 <https://github.com/UniversalRobots/ur_description/issues/39>`_)
   * Add Humble to README and workflows
   * Use galactic branch for galactic stuff
 * Contributors: Abishalini Sivaraman, Aditya Agarwal, Felix Exner, Mads Holm Peters

@@ -258,7 +258,7 @@ srdf:
 trajectory_topic: scaled_joint_trajectory_controller/follow_joint_trajectory
 urdf:
     macro_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/ur_macro.xacro
-    mesh_package_name: /home/bam/public_ws/install/ur_description/share
+    mesh_dirs: /home/bam/public_ws/install/ur_description/share
     path: ''
     xacro_path: /home/bam/public_ws/install/ur_description/share/ur_description/urdf/ur_config.urdf.xacro
 world_rpy: 0 0 0

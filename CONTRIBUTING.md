@@ -1,5 +1,5 @@
 # Contributing Guidelines
-Thank you for your interest in contributing to `Universal_Robots_ROS2_Description`.
+Thank you for your interest in contributing to `ur_description`.
 Whether it's a bug report, new feature, correction, or additional
 documentation, we greatly value feedback and contributions from our community.
 

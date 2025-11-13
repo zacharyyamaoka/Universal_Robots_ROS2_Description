@@ -1,4 +1,4 @@
-# Universal_Robots_ROS2_Description
+# ur_description
 
 This repository contains description files and meshes for *Universal Robots* manipulators.
 
@@ -6,10 +6,10 @@ This repository contains description files and meshes for *Universal Robots* man
 
 ROS2 Distro | Branch | Build status | Released packages
 :---------: | :----: | :----------: | :---------------:
-**Humble** | [`humble`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/humble) | [![Build Status](https://build.ros2.org/job/Hbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Hbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#humble)
-**Jazzy** | [`jazzy`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/jazzy) | [![Build Status](https://build.ros2.org/job/Jbin_uN64__ur_description__ubuntu_noble_amd64__binary/badge/icon)](https://build.ros2.org/job/Jbin_uN64__ur_description__ubuntu_noble_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#jazzy)
-**Kilted** | [`rolling`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/rolling) | [![Build Status](https://build.ros2.org/job/Kbin_uN64__ur_description__ubuntu_noble_amd64__binary/badge/icon)](https://build.ros2.org/job/Kbin_uN64__ur_description__ubuntu_noble_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#kilted)
-**Rolling** | [`rolling`](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description/tree/rolling) | [![Build Status](https://build.ros2.org/job/Rbin_uN64__ur_description__ubuntu_noble_amd64__binary/badge/icon)](https://build.ros2.org/job/Rbin_uN64__ur_description__ubuntu_noble_amd64__binary/)| [ur_description](https://index.ros.org/p/ur_description/#rolling)
+**Humble** | [`humble`](https://github.com/UniversalRobots/ur_description/tree/humble) | [![Build Status](https://build.ros2.org/job/Hbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/badge/icon)](https://build.ros2.org/job/Hbin_uJ64__ur_description__ubuntu_jammy_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#humble)
+**Jazzy** | [`jazzy`](https://github.com/UniversalRobots/ur_description/tree/jazzy) | [![Build Status](https://build.ros2.org/job/Jbin_uN64__ur_description__ubuntu_noble_amd64__binary/badge/icon)](https://build.ros2.org/job/Jbin_uN64__ur_description__ubuntu_noble_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#jazzy)
+**Kilted** | [`rolling`](https://github.com/UniversalRobots/ur_description/tree/rolling) | [![Build Status](https://build.ros2.org/job/Kbin_uN64__ur_description__ubuntu_noble_amd64__binary/badge/icon)](https://build.ros2.org/job/Kbin_uN64__ur_description__ubuntu_noble_amd64__binary/) | [ur_description](https://index.ros.org/p/ur_description/#kilted)
+**Rolling** | [`rolling`](https://github.com/UniversalRobots/ur_description/tree/rolling) | [![Build Status](https://build.ros2.org/job/Rbin_uN64__ur_description__ubuntu_noble_amd64__binary/badge/icon)](https://build.ros2.org/job/Rbin_uN64__ur_description__ubuntu_noble_amd64__binary/)| [ur_description](https://index.ros.org/p/ur_description/#rolling)
 
 A more [detailed build status](ci_status.md) shows the state of all CI workflows inside this repo.
 Please note that the detailed view is intended for developers, while the one here should give end

@@ -4,9 +4,9 @@ base_link: base_link
 base_mount: base_link_ur
 base_rpy: 0 0 0
 base_xyz: 0 0 0
-config_dir: /home/bam/public_ws/src/Universal_Robots_ROS2_Description/urdf/config
+config_dir: /home/bam/public_ws/src/ur_description/urdf/config
 config_file_name: ur_ur10_v0.0.0
-config_file_path: /home/bam/public_ws/src/Universal_Robots_ROS2_Description/urdf/config/ur_ur10_v0.0.0.yaml
+config_file_path: /home/bam/public_ws/src/ur_description/urdf/config/ur_ur10_v0.0.0.yaml
 dh:
     a2: '-0.612'
     a3: '-0.5723'
@@ -571,9 +571,9 @@ srdf:
     xacro_path: /home/bam/public_ws/src/Universal_Robots_ROS2_Driver/ur_moveit_config/srdf/ur.srdf.xacro
 trajectory_topic: scaled_joint_trajectory_controller/follow_joint_trajectory
 urdf:
-    macro_path: /home/bam/public_ws/src/Universal_Robots_ROS2_Description/urdf/ur_macro.xacro
-    mesh_package_name: /home/bam/public_ws/src/Universal_Robots_R
+    macro_path: /home/bam/public_ws/src/ur_description/urdf/ur_macro.xacro
+    mesh_dirs: /home/bam/public_ws/src/Universal_Robots_R
     path: ''
-    xacro_path: /home/bam/public_ws/src/Universal_Robots_ROS2_Description/urdf/ur_config.urdf.xacro
+    xacro_path: /home/bam/public_ws/src/ur_description/urdf/ur_config.urdf.xacro
 world_rpy: 0 0 0
 world_xyz: 0 0 0
