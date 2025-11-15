@@ -458,6 +458,10 @@
   </xacro:macro>
 
 
+  <xacro:macro name="make_config" params="config_file">
+    <xacro:make_arm config_file="${config_file}"/>
+  </xacro:macro>
+
   <xacro:macro name="make_arm" params="config_file">
 
     <xacro:property name="cfg" value="${xacro.load_yaml(config_file)}"/>

@@ -6,7 +6,7 @@
         "limitSymbolsToIncludedHeaders": false
       },
       "includePath": [
-        "/home/bam/bam_ws/install/bam_msgs/include/**",
+        "/home/bam/bam_ws/install/bam.msgs/include/**",
         "/home/bam/bam_ws/install/bam_hardware_interface/include/**",
         "/home/bam/bam_ws/install/bam_kinematics_dynamics/include/**",
         "/home/bam/public_ws/install/ur_calibration/include/**",
