@@ -300,7 +300,7 @@
     </joint> -->
 
     <!-- joints - main serial chain -->
-    <joint name="${tf_prefix}base_link_ur-base_link_inertia" type="fixed">
+    <joint name="${tf_prefix}base_link_ur_base_link_inertia" type="fixed">
       <parent link="${tf_prefix}base_link_ur" />
       <child link="${tf_prefix}base_link_inertia" />
       <!-- 'base_link_ur' is REP-103 aligned (so X+ forward), while the internal
@@ -394,7 +394,7 @@
 
       <!-- The FT Frame has the same pose as tool0_flip, but we add tool0_flip because its more verbose -->
     <link name="${tf_prefix}ft_frame"/>
-    <joint name="${tf_prefix}wrist_3_link-ft_frame" type="fixed">
+    <joint name="${tf_prefix}wrist_3_link_ft_frame" type="fixed">
       <parent link="${tf_prefix}wrist_3_link"/>
       <child link="${tf_prefix}ft_frame"/>
       <origin xyz="0 0 0" rpy="${pi} 0 0"/>
@@ -402,7 +402,7 @@
 
     <!-- ROS-Industrial 'base' frame - base_link_ur to UR 'Base' Coordinates transform -->
     <link name="${tf_prefix}base"/>
-    <joint name="${tf_prefix}base_link_ur-base_fixed_joint" type="fixed">
+    <joint name="${tf_prefix}base_link_ur_base_fixed_joint" type="fixed">
       <!-- Note the rotation over Z of pi radians - as base_link_ur is REP-103
            aligned (i.e., has X+ forward, Y+ left and Z+ up), this is needed
            to correctly align 'base' with the 'Base' coordinate system of
@@ -415,7 +415,7 @@
 
     <!-- ROS-Industrial 'flange' frame - attachment point for EEF models -->
     <link name="${tf_prefix}flange" />
-    <joint name="${tf_prefix}wrist_3-flange" type="fixed">
+    <joint name="${tf_prefix}wrist_3_flange" type="fixed">
       <parent link="${tf_prefix}wrist_3_link" />
       <child link="${tf_prefix}flange" />
       <origin xyz="0 0 0" rpy="0 ${-pi/2.0} ${-pi/2.0}" />
@@ -423,7 +423,7 @@
 
     <!-- ROS-Industrial 'tool0' frame - all-zeros tool frame -->
     <link name="${tf_prefix}tool0"/>
-    <joint name="${tf_prefix}flange-tool0" type="fixed">
+    <joint name="${tf_prefix}flange_tool0" type="fixed">
       <!-- default toolframe - X+ left, Y+ up, Z+ front -->
       <origin xyz="0 0 0" rpy="${pi/2.0} 0 ${pi/2.0}"/>
       <parent link="${tf_prefix}flange"/>
@@ -449,7 +449,7 @@
     </joint>
 
       <link name="${tf_prefix}tool0_flip"/>
-      <joint name="${tf_prefix}tool0-tool0flip" type="fixed">
+      <joint name="${tf_prefix}tool0_tool0flip" type="fixed">
         <origin xyz="0 0 0" rpy="${pi} 0 0"/>
         <parent link="${tf_prefix}tool0"/>
         <child link="${tf_prefix}tool0_flip"/>

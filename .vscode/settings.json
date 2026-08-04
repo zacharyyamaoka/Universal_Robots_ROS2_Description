@@ -80,5 +80,7 @@
         "/home/bam/control_ws/install/controller_manager_msgs/lib/python3.12/site-packages",
         "/home/bam/control_ws/install/control_msgs/lib/python3.12/site-packages",
         "/opt/ros/jazzy/lib/python3.12/site-packages"
-    ]
+    ],
+    "ROS2.distro": "jazzy",
+    "explorer.sortOrder": "modified"
 }
